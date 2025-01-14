@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Tiago Gorri</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/home.css">
-    <link rel="shortcut icon" href="../img/favicon.png"" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -17,26 +18,26 @@
             </a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#introduction-session" aria-label="Início">Início</a></li>
-                    <li><a href="#about-session" aria-label="Sobre">Sobre</a></li>
-                    <li><a href="#skills-session" aria-label="Skills">Skills</a></li>
-                    <li><a href="#forms-session" aria-label="Contato">Contato</a></li>
+                    <li><a href="#introduction-session" aria-label="Início">INÍCIO</a></li>
+                    <li><a href="#about-session" aria-label="Sobre">SOBRE</a></li>
+                    <li><a href="#skills-session" aria-label="Skills">SKILLS</a></li>
+                    <li><a href="#contact-session" aria-label="Contato">CONTATO</a></li>
                 </ul>
             </nav>
-            <a href="caminho/do/curriculo.pdf" class="botao-curriculo" download aria-label="Baixar Currículo">Baixar Currículo</a>
+            <div class="buttons-container">
+                <a class="curriculum-btn" href="../img/Currículo - Tiago Kasprzak Gorri.pdf" download aria-label="Baixar Currículo">
+                    BAIXAR CURRÍCULO
+                </a>
+            </div>
         </div>
     </header>
+
     <main>
         <section id="introduction-session">
             <div class="introduction-text">
-                <h2>Olá, meu nome é</h2>
-                <h1>Tiago Kasprzak Gorri,</h1>
-                <p>
-                    tenho 18 anos e moro em Curitiba. Atualmente, curso o <strong>3º período de Engenharia de Software</strong> na <strong>PUCPR</strong>, onde me ingressei em 2024. Desde criança, sempre fui fascinado por tecnologia, e em 2023 comecei minha jornada na programação.
-                  </p>
-                  <p>
-                    Hoje, domino várias <strong>linguagens de programação</strong>, como <strong>Python</strong>, <strong>Golang</strong>, <strong>JavaScript</strong>, <strong>PHP</strong> e <strong>Java</strong>. Também trabalho com <strong>SQL</strong>, <strong>MySQL</strong>, e frameworks como <strong>React</strong> e <strong>Angular</strong>, além de habilidades em <strong>HTML</strong> e <strong>CSS</strong>.
-                  </p>
+                <h2 class="introduction-hello typing">Olá, meu nome é...</h2>
+                <h1 class="introduction-name typing">Tiago Kasprzak Gorri.</h1>
+                <h2 class="introduction-work typing">Estudante de Engenharia de Software | PUCPR</h2>
                 <div class="introduction-icons">
                     <a href="https://github.com/tiagogorridev" target="_blank">
                         <img src="../img/github.png" alt="GitHub">
@@ -52,78 +53,88 @@
                     </a>
                 </div>
             </div>
-
-            <div class="introduction-img">
+            <div class="introduction-logo">
                 <img src="../img/tiagogorri.png" alt="Imagem de Tiago Gorri">
             </div>
         </section>
-
         <img src="../img/onda.png" alt="Onda decorativa" aria-hidden="true" class="wave">
-
         <section id="about-session">
-            <h2>Sobre Mim</h2>
-            <p>
-              Sou fluente em inglês, com mais de 10 anos de estudo na <strong>Wizards</strong>, certificações e vivências internacionais.
-            </p>
-            <p>
-              Estou sempre em busca de desafios que me permitam aplicar meus conhecimentos em programação, bancos de dados e desenvolvimento web. Acredito na importância de aprender continuamente para evoluir como profissional e como pessoa.
-            </p>
-            <p>
-              Atualmente, estou focado em projetos que envolvem tecnologias modernas, trabalhando para resolver problemas reais e criar soluções eficientes. Meu objetivo é contribuir para o sucesso de uma equipe que valorize inovação e crescimento, ao mesmo tempo em que aprimoro minhas habilidades técnicas e pessoais.
-            </p>
-            <p>
-              Confira meus projetos no meu <strong>GitHub</strong>, onde aplico as mais diversas tecnologias e frameworks, demonstrando dedicação em resolver desafios e entregar resultados de qualidade.
-            </p>
-          </section>
-          
-        <img src="../img/onda.png" alt="Onda decorativa" aria-hidden="true" class="wave2">
+            <div class="about-container">
+                <div class="left-content">
+                    <h2>Sobre Mim</h2>
+                    <p>Tenho 18 anos, moro em Curitiba e atualmente curso o <strong>3º período de Engenharia de Software</strong> na <strong>PUCPR</strong>, onde me ingressei no início de 2024.</p>
+                    <p>Desde criança, sempre fui fascinado por tecnologia, e em 2023 tive meu primeiro contato com a programação.</p>
+                    <p>Hoje, domino várias <strong>linguagens de programação</strong>, como <strong>Python</strong>, <strong>Golang</strong>, <strong>JavaScript</strong>, <strong>PHP</strong> e <strong>Java</strong>. Também trabalho com <strong>SQL</strong>, <strong>MySQL</strong>, e frameworks como <strong>React</strong> e <strong>Angular</strong>, além de habilidades em <strong>HTML</strong> e <strong>CSS</strong>.</p>
+                    <p>Sou fluente em inglês, com mais de 10 anos de estudo na <strong>Wizard</strong>, certificações e vivências internacionais.</p>
+                    <p>Estou sempre em busca de desafios que me permitam aplicar meus conhecimentos em programação, bancos de dados e desenvolvimento web.</p>
+                    <p>Atualmente, estou focado em projetos que envolvem tecnologias modernas.</p>
+                    <p>Confira meus projetos no meu <strong>GitHub</strong>.</p>
+                </div>
+                <div class="right-content">
+                    <div class="circle"></div>
+                    <div class="circle2"></div>
+                </div>
+            </div>
+        </section>
 
         <section id="skills-session">
-            <h1>Skills</h1>
+        <img src="../img/onda.png" alt="Onda decorativa" aria-hidden="true" class="wave2">
+            <h2>Skills</h2>
             <div class="skills-container">
                 <button class="arrow arrow-left" id="arrow-left">&#8249;</button>
-                <div class="skills-cards" id="skills-cards">
-                    <div class="cards">
-                        <img src="../img/python.png" alt="Python">
-                    </div>
-                    <div class="cards">
-                        <img src="../img/javascript.png" alt="JavaScript">
-                    </div>
-                    <div class="cards">
-                        <img src="../img/java.png" alt="Java">
-                    </div>
-                    <div class="cards">
-                        <img src="../img/php.png" alt="PHP">
-                    </div>
-                    <div class="cards">
-                        <img src="../img/sql.png" alt="SQL">
-                    </div>
-                    <div class="cards">
-                        <img src="../img/react.png" alt="React">
-                    </div>
-                    <div class="cards">
-                        <img src="../img/angular.png" alt="Angular">
-                    </div>
-                    <div class="cards">
-                        <img src="../img/html.png" alt="HTML">
-                    </div>
-                    <div class="cards">
-                        <img src="../img/css.png" alt="CSS">
+                <div class="skills-wrapper">
+                    <div class="skills-cards" id="skills-cards">
+                        <div class="cards">
+                            <img src="../img/python.png" alt="Python">
+                            <p>Python</p>
+                        </div>
+                        <div class="cards">
+                            <img src="../img/javascript.png" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="cards">
+                            <img src="../img/java.png" alt="Java">
+                            <p>Java</p>
+                        </div>
+                        <div class="cards">
+                            <img src="../img/php.png" alt="PHP">
+                            <p>PHP</p>
+                        </div>
+                        <div class="cards">
+                            <img src="../img/sql.png" alt="MySQL">
+                            <p>MySQL</p>
+                        </div>
+                        <div class="cards">
+                            <img src="../img/react.png" alt="React">
+                            <p>React</p>
+                        </div>
+                        <div class="cards">
+                            <img src="../img/angular.png" alt="Angular">
+                            <p>Angular</p>
+                        </div>
+                        <div class="cards">
+                            <img src="../img/html.png" alt="HTML">
+                            <p>HTML</p>
+                        </div>
+                        <div class="cards">
+                            <img src="../img/css.png" alt="CSS">
+                            <p>CSS</p>
+                        </div>
                     </div>
                 </div>
                 <button class="arrow arrow-right" id="arrow-right">&#8250;</button>
             </div>
         </section>
-        <section id="forms-session">
-            <div class="forms-left">
+
+        <section id="contact-session">
+            <div class="contact-info">
                 <h3>E aí, o que achou?</h3>
                 <h2>Vamos trabalhar juntos!</h2>
-                <p>
-                    Me mande um email e logo eu retornarei! Sinta-se a vontade para me enviar uma mensagem sobre qualquer coisa, desde oportunidades de trabalho até dúvidas sobre meus projetos.
-                </p>
+                <p>Me mande um email e logo eu retornarei!</p>
+                <p class="email"><a href="mailto:tiagogorri@gmail.com" target="_blank">tiagogorri@gmail.com</a></p>
             </div>
-            <div class="forms-right">
-                <form action="">
+            <div class="contact-forms">
+                <form>
                     <h2>Me mande uma mensagem</h2>
                     <input type="text" id="name" name="name" placeholder="Nome" required>
                     <input type="email" id="email" name="email" placeholder="Email" required>
@@ -134,59 +145,32 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer-container">
-          <div class="footer-top">
-            <p>© 2025</p>
-            <p class="back-to-top">
-              <a href="#top">VOLTAR PARA CIMA</a>
-              <span class="arrow">↑</span>
-            </p>
-          </div>
-          <div class="footer-content">
-            <div class="contact">
-              <p>FIQUE À VONTADE PARA</p>
-              <h1>CONVERSAR</h1>
+            <div class="footer-top">
+                <p class="copyright">© 2025</p>
+                <p class="back-to-top">
+                    <a href="#top">VOLTAR AO TOPO<span class="arrow-footer">↑</span></a>
+                </p>
             </div>
-            <div class="social-links">
-              <a href="https://github.com/tiagogorridev" target="_blank">GITHUB</a>
-              <a href="https://www.linkedin.com/in/tiagogorridev/" target="_blank">LINKEDIN</a>
-              <a href="https://www.instagram.com/tiagogorri/" target="_blank">INSTAGRAM</a>
+            <div class="footer-content">
+                <div class="contact">
+                    <p>FIQUE À VONTADE PARA</p>
+                    <h2>CONVERSAR</h2>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/tiagogorridev" target="_blank">GITHUB</a>
+                    <a href="https://www.linkedin.com/in/tiagogorridev/" target="_blank">LINKEDIN</a>
+                    <a href="https://www.instagram.com/tiagogorri/" target="_blank">INSTAGRAM</a>
+                </div>
             </div>
-          </div>
-          <div class="credits">
-            <p>Tiago Kasprzak Gorri</p>
-          </div>
+            <div class="credits">
+                <p>Tiago Kasprzak Gorri</p>
+            </div>
         </div>
-      </footer>
-
-      <script>
-        const skillsCards = document.getElementById('skills-cards');
-        const cards = document.querySelectorAll('.cards');
-        const leftArrow = document.getElementById('arrow-left');
-        const rightArrow = document.getElementById('arrow-right');
-
-        let currentIndex = 0;
-        const itemsPerView = 3;
-        const cardWidth = 300;
-
-        function updateCarousel() {
-            const offset = currentIndex * cardWidth * itemsPerView;
-            skillsCards.style.transform = `translateX(-${offset}px)`;
-        }
-
-        leftArrow.addEventListener('click', () => {
-            currentIndex = Math.max(currentIndex - 1, 0);
-            updateCarousel();
-        });
-
-        rightArrow.addEventListener('click', () => {
-            const maxIndex = Math.ceil(cards.length / itemsPerView) - 1;
-            currentIndex = Math.min(currentIndex + 1, maxIndex);
-            updateCarousel();
-        });
-
-        updateCarousel();
-    </script>
+    </footer>
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
