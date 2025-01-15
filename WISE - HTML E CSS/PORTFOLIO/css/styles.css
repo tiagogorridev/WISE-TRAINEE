@@ -46,26 +46,26 @@ header {
     list-style: none;
 }
 
-.nav-links a {
+.nav-links a, .projects-links {
     letter-spacing: 0.5px;
     color: var(--roxo-escuro);
     font-weight: 600;
 }
 
-.nav-links a, .email a {
+.nav-links a, .email a, .projects-links {
     position: relative;
     transition: color 0.3s ease;
     text-decoration: none;
 }
 
-.nav-links a:hover::after, .email a:hover::after {
+.nav-links a:hover::after, .email a:hover::after, .projects-links:hover::after {
     width: 100%;
     opacity: 1;
     bottom: 0;
     left: 0;
 }
 
-.nav-links a::after, .email a::after{
+.nav-links a::after, .email a::after, .projects-links::after{
     content: "";
     position: absolute;
     width: 0;
@@ -295,6 +295,12 @@ header {
     transform: scale(1.05);
 }
 
+.card video {
+    width: 100%; /* Faz o vídeo ocupar toda a largura da box */
+    height: auto; /* Mantém a proporção do vídeo */
+    border-radius: 8px; /* Deixa as bordas arredondadas, combinando com a box */
+    object-fit: cover; /* Ajusta o vídeo para preencher a área disponível */
+}
 
 #contact-session {
     max-width: 1200px;
