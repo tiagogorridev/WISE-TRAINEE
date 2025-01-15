@@ -272,8 +272,8 @@ header {
 
 .skills-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 itens por linha */
-    gap: 20px; /* Espaço entre os cartões */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
 }
 
@@ -556,12 +556,11 @@ footer {
         padding: 7px 15px;
     }
 
-    /* Skills Section */
     .skills-cards {
         display: grid;
-        grid-template-columns: repeat(2, 50%); /* 2 itens por linha, cada ocupando 50% */
-        gap: 10px; /* Espaço entre os itens */
-        justify-items: center; /* Centraliza os itens */
+        grid-template-columns: repeat(2, 50%);
+        gap: 10px;
+        justify-items: center;
     }
 
     .skills-cards .card {
@@ -574,27 +573,25 @@ footer {
         border-radius: 8px;
         background: #f9f9f9;
         transition: transform 0.2s ease;
-        width: 100%; /* Garantindo que o card ocupe toda a largura disponível */
+        width: 100%;
     }
 
     .skills-cards .card img {
-        max-width: 60px; /* Ajuste do tamanho da imagem */
-        margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+        max-width: 60px;
+        margin-bottom: 10px;
         object-fit: contain;
     }
 
     .skills-cards .card:hover {
-        transform: scale(1.05); /* Efeito de hover */
+        transform: scale(1.05);
     }
 
-    /* Quando há apenas um item na última linha, ele ocupa o espaço de dois */
     .skills-cards .card:last-child {
         grid-column: span 2;
     }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-    /* Ajustes para telas de tablets e dispositivos pequenos */
     
     .container {
         flex-direction: column;
@@ -641,7 +638,7 @@ footer {
 
     .skills-cards {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 itens por linha */
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
@@ -673,7 +670,6 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* Ajustes para dispositivos como laptops e tablets maiores */
     
     .container {
         flex-direction: row;
@@ -714,13 +710,12 @@ footer {
 
     .skills-cards {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 itens por linha */
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
-    /* Ajustes para telas de desktop médios */
     
     .container {
         flex-direction: row;
@@ -733,7 +728,7 @@ footer {
 
     .skills-cards {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 itens por linha */
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
@@ -749,7 +744,6 @@ footer {
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
-    /* Ajustes para telas de desktop grandes */
     
     .container {
         max-width: 1400px;
