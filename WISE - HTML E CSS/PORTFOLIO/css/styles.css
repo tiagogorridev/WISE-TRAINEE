@@ -21,6 +21,7 @@ body {
     overflow-x: hidden;
 }
 
+/* HEADER */
 header {
     background-color: #FAF7FE;
     position: fixed;
@@ -95,6 +96,7 @@ header {
     cursor: pointer;
 }
 
+/* INICIO */
 .typing {
     overflow: hidden;
     white-space: nowrap;
@@ -185,6 +187,7 @@ header {
     box-shadow: 0 5px 10px rgba(90, 76, 167, 0.5);  
 }
 
+/* SOBRE */
 .wave {
     width: 100%;
 }
@@ -235,14 +238,8 @@ header {
     right: 0;
     top: 115%;
 }
-
-#about-session h2, #skills-session h2 {
-    font-family: "Poppins", serif;
-    font-weight: 700;
-    font-size: 50px;
-    margin-bottom: 30px;
-    letter-spacing: 1.2px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.507);
+#about-session h2 {
+    margin-left: 0%; 
 }
 
 #about-session p {
@@ -254,8 +251,10 @@ header {
     transform: scaleY(-1);
 }
 
+/* SKILLS */
 #skills-session, #projects-session {
     text-align: center;
+    
 }
 
 .skills-container, .projects-container {
@@ -263,11 +262,22 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-left: -15%; 
+
 }
 
 .skills-wrapper, .projects-wrapper {
-    flex: 1;
-    max-width: 80%;
+    flex: 0.5;
+    max-width: 90%;
+    
+}
+
+#skills-session h2 {
+    color: var(--roxo-escuro);
+}
+
+#skills-session h3 {
+    color: var(--roxo-escuro);
 }
 
 .skills-cards, .projects-cards {
@@ -295,13 +305,73 @@ header {
     transform: scale(1.05);
 }
 
-.card video {
-    width: 100%; /* Faz o vídeo ocupar toda a largura da box */
-    height: auto; /* Mantém a proporção do vídeo */
-    border-radius: 8px; /* Deixa as bordas arredondadas, combinando com a box */
-    object-fit: cover; /* Ajusta o vídeo para preencher a área disponível */
+
+/* PROJETOS */
+#projects-session {
+    margin: -0.5% 0px;
+    background-color: var(--roxo-medio);
 }
 
+.projects-title {
+    margin: 30px;
+
+}
+
+.projects-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.title {
+    font-family: "Abril Fatface", serif;
+    font-weight: 300;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+    letter-spacing: 1.2px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);    text-align: left;
+    margin-left: 15%; 
+    margin-bottom: 20px; 
+}
+
+.sub-title {
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    font-size: 24px; 
+    margin-left: 15%; 
+    margin-bottom: 20px; 
+    border-left: 5px solid var(--roxo-escuro);
+    padding: 0.13rem 0.75rem;
+}
+
+.projects-wrapper {
+    max-width: 1200px;
+    width: 100%;
+}
+.card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 15px 10px;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #666;
+    margin: 0 10px 20px;
+    line-height: 1.4;
+}
+
+.card video {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    object-fit: cover; 
+}
+
+/* CONTATO */
 #contact-session {
     max-width: 1200px;
     display: flex;
@@ -359,6 +429,8 @@ input:valid, input:focus, textarea:valid, textarea:focus {
     font-weight: 700;
 }
 
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 50px 20px;
