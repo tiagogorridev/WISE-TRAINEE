@@ -254,23 +254,23 @@ header {
     transform: scaleY(-1);
 }
 
-#skills-session {
+#skills-session, #projects-session {
     text-align: center;
 }
 
-.skills-container {
+.skills-container, .projects-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.skills-wrapper {
+.skills-wrapper, .projects-wrapper {
     flex: 1;
     max-width: 80%;
 }
 
-.skills-cards {
+.skills-cards, .projects-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
