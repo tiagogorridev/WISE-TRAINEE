@@ -167,7 +167,7 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-.introduction-icons img:hover {
+.introduction-icons img:hover, .card:hover {
     transform: scale(1.1);
     box-shadow: 0 5px 10px rgba(90, 76, 167, 0.5);  
 }
@@ -190,7 +190,7 @@ header {
 }
 
 #about-session {
-    margin: -8% 0;
+    margin: -5% 0;
     background-color: var(--roxo-medio);
     padding: 60px 30px;
     color: white;
@@ -255,66 +255,46 @@ header {
 }
 
 #skills-session {
-    margin: 100px auto;
     text-align: center;
 }
 
 .skills-container {
-    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    overflow: hidden;
+    justify-content: center;
+    gap: 10px;
 }
 
 .skills-wrapper {
-    width: 900px;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
+    flex: 1;
+    max-width: 80%;
 }
 
 .skills-cards {
-    display: flex;
-    transition: transform 0.5s linear;
-    will-change: transform;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 itens por linha */
+    gap: 20px; /* Espaço entre os cartões */
+    padding: 20px;
 }
 
-.cards {
-    flex: 1 0 300px;
+.card {
     text-align: center;
-    transform-origin: center;
-    transition: transform 0.3s ease-in-out;
-    position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: transform 0.2s ease;
 }
 
-.cards img {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
+.card img {
+    max-width: 80px;
     margin-bottom: 10px;
-    object-fit: cover;
-    transition: transform 0.3s;
 }
 
-.cards p {
-    font-size: 28px;
-    font-weight: 600;
+.card:hover {
+    transform: scale(1.05);
 }
 
-.arrow {
-    position: absolute;
-    font-size: 50px;
-    border: none;
-}
-
-.arrow-left {
-    left: 20%;
-}
-
-.arrow-right {
-    right: 20%;
-}
 
 #contact-session {
     max-width: 1200px;
@@ -455,8 +435,17 @@ footer {
     color: #666;
 }
 
-/*390x844*/
-@media (max-width: 390px) {
+@media (min-width: 200px) and (max-width: 480px) {
+
+    @keyframes typing {
+        from {
+            width: 95%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
     .container {
         justify-content: center;
     }
@@ -469,26 +458,18 @@ footer {
         display: none;
     }
 
-    @keyframes typing {
-        from {
-            width: 95%;
-        }
-        to {
-            width: 100%;
-        }
-    }
-    
     #introduction-session {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
     .introduction-hello {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .introduction-name {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .introduction-work {
@@ -502,16 +483,13 @@ footer {
 
     .introduction-logo img {
         margin-top: 20px;
-        width: 320px;
-        height: 320px;
-    }
-
-    #about-session {
-        margin-bottom: -30%;
+        width: 280px;
+        height: 280px;
     }
 
     .about-container {
         flex-direction: column;
+        padding: 20px;
     }
 
     .circle {
@@ -520,14 +498,12 @@ footer {
     }
 
     .circle2 {
-        width: 100px;
-        height: 100px;
-        top: 260%;
-        right: -60px;
+        display: none;
     }
 
     #contact-session {
         flex-direction: column;
+        padding: 20px;
     }
 
     .contact-info {
@@ -559,6 +535,9 @@ footer {
 
     .footer-container {
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-top {
@@ -577,22 +556,210 @@ footer {
         padding: 7px 15px;
     }
 
-    /* Para telas menores, ajuste o carrossel */
-@media (max-width: 390px) {
-    .skills-wrapper {
-        overflow: hidden; /* Garante que só o card visível apareça */
-    }
-
+    /* Skills Section */
     .skills-cards {
-        display: flex;
-        transform: translateX(0); /* Garante a posição inicial */
-        transition: transform 0.3s ease; /* Suaviza a transição */
+        display: grid;
+        grid-template-columns: repeat(2, 50%); /* 2 itens por linha, cada ocupando 50% */
+        gap: 10px; /* Espaço entre os itens */
+        justify-items: center; /* Centraliza os itens */
     }
 
-    .cards {
-        flex: 0 0 100%; /* Cada card ocupa 100% da largura visível */
-        max-width: 100%;
+    .skills-cards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background: #f9f9f9;
+        transition: transform 0.2s ease;
+        width: 100%; /* Garantindo que o card ocupe toda a largura disponível */
+    }
+
+    .skills-cards .card img {
+        max-width: 60px; /* Ajuste do tamanho da imagem */
+        margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+        object-fit: contain;
+    }
+
+    .skills-cards .card:hover {
+        transform: scale(1.05); /* Efeito de hover */
+    }
+
+    /* Quando há apenas um item na última linha, ele ocupa o espaço de dois */
+    .skills-cards .card:last-child {
+        grid-column: span 2;
     }
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+    /* Ajustes para telas de tablets e dispositivos pequenos */
+    
+    .container {
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+
+    .curriculum-btn {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+    }
+
+    #introduction-session {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .introduction-hello {
+        font-size: 22px;
+    }
+
+    .introduction-name {
+        font-size: 32px;
+    }
+
+    .introduction-work {
+        font-size: 16px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .circle2 {
+        display: none;
+    }
+
+    .skills-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 itens por linha */
+        gap: 15px;
+    }
+
+    .skills-cards .card {
+        padding: 20px;
+        width: 100%;
+    }
+
+    #contact-session {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .contact-info {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Ajustes para dispositivos como laptops e tablets maiores */
+    
+    .container {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .curriculum-btn {
+        font-size: 16px;
+    }
+
+    #introduction-session {
+        flex-direction: row;
+        padding: 50px 20px;
+    }
+
+    .introduction-hello {
+        font-size: 24px;
+    }
+
+    .introduction-name {
+        font-size: 36px;
+    }
+
+    .about-container {
+        padding: 40px 20px;
+    }
+
+    .circle2 {
+        display: none;
+    }
+
+    #contact-session {
+        padding: 0px 20px;
+    }
+
+    .skills-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 itens por linha */
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    /* Ajustes para telas de desktop médios */
+    
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .circle2 {
+        display: none;
+    }
+
+    .skills-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 itens por linha */
+        gap: 20px;
+    }
+
+    #contact-session {
+        padding: 0px 20px;
+    }
+
+    .footer-container {
+        padding: 30px 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    /* Ajustes para telas de desktop grandes */
+    
+    .container {
+        max-width: 1400px;
+    }
+
+    .circle2 {
+        display: none;
+    }
+
+    .footer-container {
+        max-width: 1400px;
+    }
 }
