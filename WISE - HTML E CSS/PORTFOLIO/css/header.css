@@ -1,0 +1,84 @@
+header {
+    background-color: #FAF7FE;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a, .projects-links, .email a {
+    letter-spacing: 0.5px;
+    color: var(--roxo-escuro);
+    font-weight: 600;
+    position: relative;
+    transition: color 1s ease;
+    text-decoration: none;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons-container img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle; 
+}
+
+.buttons-container img:hover {
+    transform: translateY(-3px);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.nav-links a:hover::after, .email a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.nav-links a::after, .email a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--roxo-escuro);
+    bottom: -4px;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s ease-in-out;
+}
+
+.curriculum-btn {
+    background-color: var(--roxo-primario);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    padding: 8px 12px;
+}
+
+.curriculum-btn:hover, .social-links a:hover, button:hover {
+    background-color: var(--roxo-medio);
+    transform: translateY(-3px);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}

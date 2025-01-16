@@ -1,0 +1,48 @@
+#about-session {
+    margin: -12px 0;
+    background-color: var(--roxo-medio);
+    padding: 20px;
+    color: white;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.about-about-me {
+    flex: 50%;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-circles {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--roxo-claro);
+}
+
+.circle2 {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: var(--roxo-escuro);
+    position: absolute;
+    right: 0;
+    top: 115%;
+}
+
+#about-session h2 {
+    margin-left: 0; 
+}
