@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: #F0EDFD;
+    background-color: var(--roxo-claro);
     overflow-x: hidden;
 }
 
@@ -26,10 +26,8 @@ header {
     background-color: #FAF7FE;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 10;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1;
     width: 100%;
     padding: 5px 20px;
 }
@@ -37,7 +35,6 @@ header {
 .container {
     display: flex;
     align-items: center;
-    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -47,26 +44,21 @@ header {
     list-style: none;
 }
 
-.nav-links a, .projects-links {
+.nav-links a, .projects-links, .email a {
     letter-spacing: 0.5px;
     color: var(--roxo-escuro);
     font-weight: 600;
-}
-
-.nav-links a, .email a, .projects-links {
     position: relative;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
     text-decoration: none;
 }
 
 .nav-links a:hover::after, .email a:hover::after, .projects-links:hover::after {
     width: 100%;
     opacity: 1;
-    bottom: 0;
-    left: 0;
 }
 
-.nav-links a::after, .email a::after, .projects-links::after{
+.nav-links a::after, .email a::after, .projects-links::after {
     content: "";
     position: absolute;
     width: 0;
@@ -86,7 +78,7 @@ header {
     text-decoration: none;
     font-weight: 500;
     color: white;
-    padding: 0.5rem 1.25rem;
+    padding: 8px 12px;
 }
 
 .curriculum-btn:hover, .social-links a:hover, button:hover {
@@ -125,9 +117,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
-    margin: 100px auto;
-    padding: 75px 20px;
+    max-width: 60%;
+    margin: 200px auto;
 }
 
 .introduction-hello {
@@ -139,7 +130,7 @@ header {
 }
 
 .introduction-name {
-    font-size: 40px;
+    font-size: 48px;
     margin-bottom: 10px;
     opacity: 0;
     animation: typing 2.8s forwards, fadeIn 1s forwards;
@@ -147,10 +138,10 @@ header {
 }
 
 .introduction-work {
-    font-weight: 500;
     font-size: 18px;
-    border-left: 5px solid var(--roxo-medio);
-    padding: 0.13rem 0.75rem;
+    font-weight: 500;
+    border-left: 6px solid var(--roxo-medio);
+    padding: 2px 12px;
     opacity: 0;
     animation: fadeIn 1s forwards;
     animation-delay: 2s;
@@ -158,20 +149,20 @@ header {
 
 .introduction-icons {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .introduction-icons img {
     width: 45px;
     height: 45px;
-    cursor: pointer;
     border-radius: 50%;
-    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 .introduction-icons img:hover, .card:hover {
     transform: scale(1.1);
-    box-shadow: 0 5px 10px rgba(90, 76, 167, 0.5);  
+    box-shadow: 0 3px 6px rgba(90, 76, 167, 0.5);  
 }
 
 .introduction-logo img {
@@ -179,7 +170,7 @@ header {
     height: 400px;
     border-radius: 50%;
     border: 2px solid var(--roxo-escuro);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .introduction-logo img:hover {
@@ -193,9 +184,9 @@ header {
 }
 
 #about-session {
-    margin: -5% 0;
+    margin: -12px 0;
     background-color: var(--roxo-medio);
-    padding: 60px 30px;
+    padding: 20px;
     color: white;
 }
 
@@ -203,20 +194,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 75%;
     margin: 0 auto;
 }
 
-.left-content {
-    flex: 2;
-    padding: 20px;
-    text-align: left;
+.about-about-me {
+    flex: 50%;
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
-.right-content {
-    flex: 1;
+.about-circles {
+    flex: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,18 +221,15 @@ header {
 .circle2 {
     width: 500px;
     height: 500px;
-    background-color: var(--roxo-escuro);
     border-radius: 50%;
+    background-color: var(--roxo-escuro);
     position: absolute;
     right: 0;
     top: 115%;
 }
-#about-session h2 {
-    margin-left: 0%; 
-}
 
-#about-session p {
-    letter-spacing: 0.6px;
+#about-session h2 {
+    margin-left: 0; 
 }
 
 .wave2 {
@@ -252,35 +238,43 @@ header {
 }
 
 /* SKILLS */
-#skills-session, #projects-session {
-    text-align: center;
-    
+.sub-title {
+    font-weight: 300;
+    color: white;
+    font-size: 24px; 
+    border-left: 5px solid var(--roxo-escuro);
+    padding: 2px 12px;
 }
 
-.skills-container, .projects-container {
+.title {
+    font-family: "Abril Fatface", serif;
+    font-weight: 300;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);    
+    text-align: left;
+}
+
+.skills-content {
+    margin-left: 190px;
+    margin-bottom: 20px;
+}
+
+.skills-cards .card:hover img {
+    transition: transform 0.5s;
+    transform: rotate(-5deg);
+}
+
+.skills-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-left: -15%; 
-
 }
 
-.skills-wrapper, .projects-wrapper {
-    flex: 0.5;
-    max-width: 90%;
-    
-}
-
-#skills-session h2 {
+#skills-session h3, #skills-session h2 {
     color: var(--roxo-escuro);
 }
 
-#skills-session h3 {
-    color: var(--roxo-escuro);
-}
-
-.skills-cards, .projects-cards {
+.skills-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -288,33 +282,67 @@ header {
 }
 
 .card {
+    background: linear-gradient(135deg, var(--roxo-claro), var(--fundo-claro));
+    border-radius: 15px;
+    padding: 15px;
     text-align: center;
-    padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #f9f9f9;
-    transition: transform 0.2s ease;
+    transition: transform 1s ease;
 }
 
 .card img {
-    max-width: 80px;
-    margin-bottom: 10px;
+    max-width: 50%;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
+.skills-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-/* PROJETOS */
+.divisao2 img {
+    width: 80%;
+}
+
+.divisao {
+    flex: 2;
+}
+
+.divisao2 {
+    flex: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* PROJECTS */
 #projects-session {
-    margin: -0.5% 0px;
+    margin-top: -0.8%;
+    margin-bottom: -1.6%;
     background-color: var(--roxo-medio);
 }
 
-.projects-title {
-    margin: 30px;
-
+.projects-wrapper {
+    max-width: 60%;
+    margin-left: 190px;
+    margin-bottom: 20px;
 }
 
 .projects-cards {
@@ -324,41 +352,16 @@ header {
     padding: 20px;
 }
 
-.title {
-    font-family: "Abril Fatface", serif;
-    font-weight: 300;
-    color: white;
-    font-size: 40px;
-    margin-bottom: 30px;
-    letter-spacing: 1.2px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);    text-align: left;
-    margin-left: 15%; 
-    margin-bottom: 20px; 
+.card-projects {
+    padding: 15px;
 }
 
-.sub-title {
-    font-weight: 300;
-    color: white;
-    text-align: left;
-    font-size: 24px; 
-    margin-left: 15%; 
-    margin-bottom: 20px; 
-    border-left: 5px solid var(--roxo-escuro);
-    padding: 0.13rem 0.75rem;
-}
-
-.projects-wrapper {
-    max-width: 1200px;
-    width: 100%;
-}
-.card h3 {
-    font-size: 1.2em;
-    color: #333;
-    margin: 15px 10px;
+.card-projects h3 {
+    font-size: 22px;
 }
 
 .card p {
-    font-size: 0.95em;
+    font-size: 14px;
     color: #666;
     margin: 0 10px 20px;
     line-height: 1.4;
@@ -366,14 +369,12 @@ header {
 
 .card video {
     width: 100%; 
-    height: auto; 
     border-radius: 8px; 
-    object-fit: cover; 
 }
 
 /* CONTATO */
 #contact-session {
-    max-width: 1200px;
+    max-width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -489,13 +490,6 @@ footer {
     margin: 0;
 }
 
-.social-links {
-    flex: 1;
-    min-width: 300px;
-    margin-top: 30px;
-    text-align: right;
-}
-  
 .social-links a {
     display: inline-block;
     margin: 10px;
@@ -509,7 +503,7 @@ footer {
 
 .credits {
     margin-top: 30px;
-    font-size: 12px;
+    font-size: 14px;
     color: #666;
 }
 
@@ -650,7 +644,7 @@ footer {
         border: 1px solid #ddd;
         border-radius: 8px;
         background: #f9f9f9;
-        transition: transform 0.2s ease;
+        transition: transform 0.5s ease;
         width: 100%;
     }
 
