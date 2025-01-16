@@ -53,12 +53,12 @@ header {
     text-decoration: none;
 }
 
-.nav-links a:hover::after, .email a:hover::after, .projects-links:hover::after {
+.nav-links a:hover::after, .email a:hover::after {
     width: 100%;
     opacity: 1;
 }
 
-.nav-links a::after, .email a::after, .projects-links::after {
+.nav-links a::after, .email a::after {
     content: "";
     position: absolute;
     width: 0;
@@ -179,9 +179,7 @@ header {
 }
 
 /* SOBRE */
-.wave {
-    width: 100%;
-}
+
 
 #about-session {
     margin: -12px 0;
@@ -232,10 +230,6 @@ header {
     margin-left: 0; 
 }
 
-.wave2 {
-    width: 100%;
-    transform: scaleY(-1);
-}
 
 /* SKILLS */
 .sub-title {
@@ -259,11 +253,6 @@ header {
 .skills-content {
     margin-left: 190px;
     margin-bottom: 20px;
-}
-
-.skills-cards .card:hover img {
-    transition: transform 0.5s;
-    transform: rotate(-5deg);
 }
 
 .skills-container {
@@ -353,7 +342,9 @@ header {
 }
 
 .card-projects {
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante espaçamento entre os itens */
 }
 
 .card-projects h3 {
@@ -363,14 +354,14 @@ header {
 .card p {
     font-size: 14px;
     color: #666;
-    margin: 0 10px 20px;
     line-height: 1.4;
 }
 
 .card video {
-    width: 100%; 
+    width: 100%;
     border-radius: 8px; 
 }
+
 
 /* CONTATO */
 #contact-session {
@@ -633,33 +624,6 @@ footer {
         grid-template-columns: repeat(2, 50%);
         gap: 10px;
         justify-items: center;
-    }
-
-    .skills-cards .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        background: #f9f9f9;
-        transition: transform 0.5s ease;
-        width: 100%;
-    }
-
-    .skills-cards .card img {
-        max-width: 60px;
-        margin-bottom: 10px;
-        object-fit: contain;
-    }
-
-    .skills-cards .card:hover {
-        transform: scale(1.05);
-    }
-
-    .skills-cards .card:last-child {
-        grid-column: span 2;
     }
 }
 
