@@ -1,8 +1,8 @@
 #about-session {
     margin: -12px 0;
-    background-color: var(--roxo-medio);
+    background-color: var(--color-medium-purple);
     padding: 20px;
-    color: white;
+    color: #E0E0E0;
 }
 
 .about-container {
@@ -30,14 +30,14 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: var(--roxo-claro);
+    background-color: var(--color-light-purple);
 }
 
 .circle2 {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background-color: var(--roxo-escuro);
+    background-color: var(--color-dark-purple);
     position: absolute;
     right: 0;
     top: 115%;

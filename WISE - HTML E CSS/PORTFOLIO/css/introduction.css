@@ -3,12 +3,12 @@
     justify-content: space-between;
     align-items: center;
     max-width: 60%;
-    margin: 200px auto;
+    margin: 200px auto 0 auto;
 }
 
 .introduction-hello {
     font-size: 28px;
-    color: var(--roxo-escuro);
+    color: var(--color-dark-purple);
     font-weight: 400;
 }
 
@@ -20,8 +20,8 @@
 .introduction-work {
     font-size: 18px;
     font-weight: 500;
-    border-left: 6px solid var(--roxo-medio);
     padding: 2px 12px;
+    border-left: 6px solid var(--color-medium-purple);
 }
 
 .introduction-icons {
@@ -44,7 +44,7 @@
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    border: 2px solid var(--roxo-escuro);
+    border: 2px solid var(--color-dark-purple);
     transition: all 0.5s ease-in-out;
 }
 

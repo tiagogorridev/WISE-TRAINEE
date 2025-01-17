@@ -38,7 +38,7 @@ form {
 }
 
 input, textarea, button {
-    background-color: var(--roxo-claro);
+    background-color: var(--color-light-purple);
     padding: 20px;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -46,12 +46,12 @@ input, textarea, button {
 
 input:valid, input:focus, textarea:valid, textarea:focus {
     background-color: #ECE3FE;
-    outline: 2px solid var(--roxo-medio);
+    outline: 2px solid var(--color-medium-purple);
 }
 
 .email a {
     text-decoration: none;
-    color: var(--roxo-medio);
+    color: var(--color-medium-purple);
     font-weight: 700;
 }
 
@@ -75,7 +75,7 @@ input:valid, input:focus, textarea:valid, textarea:focus {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #7c4dff;
-    color: white;
+    color: #E0E0E0;
     padding: 20px;
     border-radius: 8px;
     font-size: 16px;

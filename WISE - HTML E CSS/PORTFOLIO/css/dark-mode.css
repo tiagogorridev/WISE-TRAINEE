@@ -1,0 +1,73 @@
+body.dark-mode, 
+body.dark-mode body {
+    background-color: var(--color-dark-black);
+    color: var(--color-grayish-white);
+}
+
+body.dark-mode header, 
+body.dark-mode .card, 
+body.dark-mode form {
+    background: none;
+    background-color: var(--color-light-black);
+}
+
+body.dark-mode #skills-session h3, 
+body.dark-mode #skills-session h2, 
+body.dark-mode h3, 
+body.dark-mode h2, 
+body.dark-mode .projects-links, 
+body.dark-mode p {
+    color: var(--color-grayish-white);
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+    background-color: var(--color-dark-purple);
+}
+
+body.dark-mode ::placeholder {
+    color: var(--color-grayish-white);
+}
+
+body.dark-mode input:valid, 
+body.dark-mode input:focus, 
+body.dark-mode textarea:valid, 
+body.dark-mode textarea:focus {
+    background-color: var(--color-light-purple);
+    color: black;
+}
+
+body.dark-mode .contact h2 {
+    color: var(--color-medium-purple);
+}
+
+body.dark-mode button {
+    background-color: var(--color-medium-purple);
+    color: var(--color-grayish-white);
+}
+
+body.dark-mode button:hover {
+    background-color: var(--color-dark-purple);
+}
+
+body.dark-mode .introduction-hello, 
+body.dark-mode .nav-links a, 
+body.dark-mode #skills-session h3, 
+body.dark-mode .card h3, 
+body.dark-mode .social-links a {
+    color: var(--color-medium-purple);
+}
+
+body.dark-mode .social-links a:hover {
+    color: white;
+}
+
+body.dark-mode .social-links a {
+    border: 1px solid var(--color-grayish-white);
+}
+
+body.dark-mode .curriculum-btn, 
+body.dark-mode .circle {
+    background-color: var(--color-accent-pink);
+    color: #121212;
+}
