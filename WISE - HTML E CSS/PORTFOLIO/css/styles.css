@@ -7,18 +7,66 @@
     --roxo-escuro: #28185C;
     --fundo-claro: #f3f3f3;
 }
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --roxo-primario: #5a4ca7;
+    --roxo-claro: #F0EDFD;
+    --roxo-medio: #733BE7;
+    --roxo-escuro: #28185C;
+    --fundo-claro: #f3f3f3;
+}
 
 * {
-    font-family: "Poppins", serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--roxo-claro);
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode {
+    background-color: var(--roxo-claro);
+    color: #000;
+}
+
+
+body.dark-mode,
+body.dark-mode .skills-cards .card,
+body.dark-mode #contact-session,
+body.dark-mode .footer-container {
+    background-color: #000000;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #1b1b1b;
+}
+
+body.dark-mode .sub-title,
+body.dark-mode .title,
+body.dark-mode .introduction-hello {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode #contact-form h2 {
+    color: black;
+}
+
+body.dark-mode .nav-links a,
+body.dark-mode .social-links a {
+    color: #bb86fc;
+}
+
+body.dark-mode .curriculum-btn,
+body.dark-mode .circle {
+    background-color: #bb86fc;
+    color: #121212;
 }
 
 @media (min-width: 200px) and (max-width: 480px) {

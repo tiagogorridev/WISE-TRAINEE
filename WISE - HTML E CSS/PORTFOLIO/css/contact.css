@@ -74,7 +74,7 @@ input:valid, input:focus, textarea:valid, textarea:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #7c4dff; /* Cor roxa */
+    background-color: #7c4dff;
     color: white;
     padding: 20px;
     border-radius: 8px;
