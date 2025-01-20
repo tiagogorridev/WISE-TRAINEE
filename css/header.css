@@ -20,6 +20,10 @@ header {
     list-style: none;
 }
 
+.nav-links a {
+    font-size: 20px;
+}
+
 .nav-links a, .projects-links, .email a, .introduction-work a {
     letter-spacing: 0.5px;
     color: var(--color-dark-purple);
