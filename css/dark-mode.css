@@ -11,8 +11,8 @@ body.dark-mode form {
     background-color: var(--color-light-black);
 }
 
-body.dark-mode #skills-session h3, 
-body.dark-mode #skills-session h2, 
+body.dark-mode #skills-section h3, 
+body.dark-mode #skills-section h2, 
 body.dark-mode h3, 
 body.dark-mode h2, 
 body.dark-mode .projects-links, 
@@ -52,7 +52,7 @@ body.dark-mode button:hover {
 
 body.dark-mode .introduction-hello, 
 body.dark-mode .nav-links a, 
-body.dark-mode #skills-session h3, 
+body.dark-mode #skills-section h3, 
 body.dark-mode .card h3, 
 body.dark-mode .social-links a {
     color: var(--color-medium-purple);

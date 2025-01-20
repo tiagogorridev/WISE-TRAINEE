@@ -37,7 +37,7 @@
     display: flex;
 }
 
-#skills-session h3, #skills-session h2 {
+#skills-section h3, #skills-section h2 {
     color: var(--color-dark-purple);
 }
 

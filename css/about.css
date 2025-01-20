@@ -1,4 +1,4 @@
-#about-session {
+#about-section {
     margin: -12px 0;
     background-color: var(--color-medium-purple);
     padding: 20px;
@@ -43,6 +43,6 @@
     top: 115%;
 }
 
-#about-session h2 {
+#about-section h2 {
     margin-left: 0; 
 }
