@@ -46,3 +46,29 @@
 #about-section h2 {
     margin-left: 0;
 }
+
+@media (min-width: 200px) and (max-width: 480px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .about-about-me {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .circle, .circle2 {
+        display: none;
+    }
+}
+
