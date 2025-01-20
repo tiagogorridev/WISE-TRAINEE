@@ -98,3 +98,46 @@
         margin-top: 20px;
     }
 }
+
+@media (min-width: 480px) and (max-width: 768px) {
+    #introduction-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 85%;
+        margin: 100px auto 0 auto;
+    }
+
+    .introduction-text {
+        text-align: center;
+    }
+
+    .introduction-name {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .introduction-work, .introduction-hello {
+        font-size: 24px;
+        font-weight: 500;
+        padding: 4px 12px;
+        margin: 0;
+        border: none;
+    }
+
+    .introduction-icons {
+        justify-content: center;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .introduction-icons img {
+        width: 50px;
+    }
+
+    .introduction-logo img {
+        width: 350px;
+        height: 350px;
+        margin-top: 20px;
+    }
+}
