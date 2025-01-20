@@ -127,3 +127,11 @@
         top: 150%;
     }
 }
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .circle2 {
+        width: 400px;
+        height: 400px;
+        top: 130%;
+    }
+}
