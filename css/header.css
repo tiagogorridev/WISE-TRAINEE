@@ -100,30 +100,15 @@ header {
     header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center;  /* Centraliza o conteúdo verticalmente */
         padding: 15px 20px;
         position: relative;
         height: 60px;
     }
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
+    
     .nav-links a,
     .buttons-container a {
         display: none;
-    }
-
-    .hamburger {
-        font-size: 30px;
-        cursor: pointer;
-        display: block;
-        position: absolute;
-        left: 20px;
     }
 
     .logo {
@@ -131,10 +116,11 @@ header {
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
+        align-items: center;  /* Centraliza verticalmente a logo */
     }
 
     .logo img {
-        max-width: 100px;
+        max-width: 130px;
     }
 
     #theme-toggle {
@@ -157,7 +143,7 @@ header {
         transition: left 0.3s ease-in-out;
         z-index: 1000;
     }
-    
+
     .nav-links.show {
         left: 0;
     }
@@ -182,7 +168,8 @@ header {
         display: block;
         position: absolute;
         left: 20px;
-        top: 15px;
+        top: 50%;
+        transform: translateY(-50%);  /* Centraliza verticalmente o ícone de hambúrguer */
         z-index: 1100;
     }
 }
