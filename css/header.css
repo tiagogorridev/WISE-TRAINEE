@@ -257,3 +257,30 @@ header {
         z-index: 1100;
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        position: relative;
+        height: 90px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: inline-block;
+    }
+
+    .buttons-container a {
+        display: none;
+    }
+}
+
