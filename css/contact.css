@@ -114,3 +114,47 @@ input:valid, input:focus, textarea:valid, textarea:focus {
         transform: rotate(360deg);
     }
 }
+
+@media (min-width: 200px) and (max-width: 480px) {
+    #contact-section {
+        flex-direction: column;
+        max-width: 90%;
+        margin: 50px auto;
+    }
+
+    .contact-info, 
+    .contact-forms {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contact-info h3,
+    .contact-info h2,
+    .contact-info p {
+        text-align: center;
+    }
+
+    .contact-info h2 {
+        font-size: 32px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input, textarea, button {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    #success-message {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .loading-spinner {
+        width: 25px;
+        height: 25px;
+    }
+}
