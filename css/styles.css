@@ -27,7 +27,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@media (min-width: 200px) and (max-width: 480px) {}
+
 
 @media (min-width: 480px) and (max-width: 768px) {}
     

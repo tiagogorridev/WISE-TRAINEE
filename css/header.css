@@ -91,3 +91,73 @@ header {
     width: 35px;
     height: 35px;
 }
+
+.hamburger {
+    display: none;
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        position: relative;
+        height: 60px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-links a,
+    .buttons-container a {
+        display: none;
+    }
+
+    .hamburger {
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        left: 20px;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 100px;
+    }
+
+    #theme-toggle {
+        position: absolute;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Quando o hambúrguer for clicado, mostramos a navegação */
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #FAF7FE;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show a {
+        padding: 10px;
+        text-align: center;
+    }
+}
