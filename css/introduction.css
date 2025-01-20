@@ -52,3 +52,49 @@
     transform: scale(1);
     box-shadow: 0 5px 10px rgba(90, 76, 167, 0.5);  
 }
+
+@media (min-width: 200px) and (max-width: 480px) {
+    #introduction-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        margin: 50px auto;
+    }
+
+    .introduction-text {
+        text-align: center;
+    }
+
+    .introduction-name {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .introduction-hello {
+        font-size: 20px;
+    }
+
+    .introduction-work {
+        margin: 0;
+        padding: 5px;
+        font-size: 15px;
+        border: none;
+    }
+    
+    .introduction-icons {
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .introduction-icons img {
+        width: 35px;
+    }
+
+    .introduction-logo img {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+}
