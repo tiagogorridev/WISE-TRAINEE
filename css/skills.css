@@ -91,6 +91,7 @@
         justify-content: center;
         display: block;
         text-align: center;
+        width: 100%;
     }
 
     .sub-title {
@@ -98,7 +99,11 @@
     }
 
     .skills-content {
-        margin: auto 30px auto 70px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         text-align: center;
     }
 
@@ -140,6 +145,7 @@
         margin-bottom: 20px;
     }
 }
+
 
 @media (min-width: 480px) and (max-width: 1024px) {
     .more-projects a {
