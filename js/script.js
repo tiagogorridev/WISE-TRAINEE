@@ -41,3 +41,9 @@ emailjs.sendForm('service_t0oolnp', 'template_1l91m72', this)
         }, 1500);
     });
 });
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
