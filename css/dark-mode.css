@@ -42,12 +42,12 @@ body.dark-mode .contact h2 {
 }
 
 body.dark-mode button {
-    background-color: var(--color-medium-purple);
+    background-color: var(--color-dark-purple);
     color: var(--color-grayish-white);
 }
 
 body.dark-mode button:hover {
-    background-color: var(--color-dark-purple);
+    background-color: var(--color-medium-purple);
 }
 
 body.dark-mode .introduction-hello, 
