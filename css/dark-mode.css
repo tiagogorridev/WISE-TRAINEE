@@ -14,11 +14,11 @@ body.dark-mode form {
 body.dark-mode #skills-section h3, 
 body.dark-mode #skills-section h2, 
 body.dark-mode h3, 
-body.dark-mode h2, 
-body.dark-mode .projects-links, 
+body.dark-mode h2,
 body.dark-mode p {
     color: var(--color-grayish-white);
 }
+
 
 body.dark-mode input, 
 body.dark-mode textarea {
@@ -53,7 +53,8 @@ body.dark-mode button:hover {
 body.dark-mode .introduction-hello, 
 body.dark-mode .nav-links a, 
 body.dark-mode #skills-section h3, 
-body.dark-mode .card h3, 
+body.dark-mode .card h3,
+body.dark-mode .projects-links,
 body.dark-mode .social-links a {
     color: var(--color-medium-purple);
 }
