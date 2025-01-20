@@ -84,12 +84,12 @@
 
     .title {
         width: 100%;
-        font-size: 60px;
+        font-size: 40px;
         text-align: center;
     }
 
     .about-about-me {
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
         margin-bottom: 20px;
     }
@@ -110,7 +110,7 @@
     }
 
     .title {
-        font-size: 70px;
+        font-size: 40px;
         text-align: left;
     }
 
@@ -128,7 +128,7 @@
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 1024px) {
     .circle2 {
         width: 400px;
         height: 400px;

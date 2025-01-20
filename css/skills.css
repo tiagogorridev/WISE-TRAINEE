@@ -201,3 +201,9 @@
         margin-bottom: 20px;
     }
 }
+
+@media (min-width: 1024px) {
+    .skills-content {
+        margin: auto 30px auto 70px;
+    }
+}
