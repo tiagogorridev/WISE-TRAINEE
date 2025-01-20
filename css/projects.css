@@ -41,7 +41,7 @@
 @media (min-width: 200px) and (max-width: 480px) {
     #projects-section {
         margin-top: -10px;
-        margin-bottom: -20px;
+        margin-bottom: -23px;
         background-color: var(--color-medium-purple);
     }
 
@@ -60,7 +60,7 @@
 
     .projects-cards {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 20px;
         padding: 10px;
     }
