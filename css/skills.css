@@ -98,8 +98,7 @@
     }
 
     .skills-content {
-        margin-left: 0;
-        margin-bottom: 10px;
+        margin: auto 30px auto 70px;
         text-align: center;
     }
 
@@ -199,11 +198,5 @@
     .divisao {
         flex: 1;
         margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .skills-content {
-        margin: auto 30px auto 70px;
     }
 }
