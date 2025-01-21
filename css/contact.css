@@ -206,3 +206,12 @@ input:valid, input:focus, textarea:valid, textarea:focus {
         height: 28px;
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    #contact-section {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 70%;
+        margin: 100px auto;
+    }
+}
