@@ -158,3 +158,51 @@ input:valid, input:focus, textarea:valid, textarea:focus {
         height: 25px;
     }
 }
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    #contact-section {
+        flex-direction: column;
+        max-width: 85%;
+        margin: 70px auto;
+    }
+
+    .contact-info,
+    .contact-forms {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .contact-info h3,
+    .contact-info h2,
+    .contact-info p {
+        text-align: center;
+    }
+
+    .contact-info p {
+        margin: 0;
+    }
+
+    .contact-info h2 {
+        font-size: 36px;
+    }
+
+    form {
+        padding: 25px;
+    }
+
+    input, textarea, button {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    #success-message {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .loading-spinner {
+        width: 28px;
+        height: 28px;
+    }
+}
