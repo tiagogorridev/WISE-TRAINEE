@@ -6,6 +6,10 @@
     margin: 200px auto 0 auto;
 }
 
+.introduction-text {
+    text-align: left;
+}
+
 .introduction-hello {
     font-size: 28px;
     color: var(--color-dark-purple);
@@ -17,11 +21,16 @@
     margin-bottom: 10px;
 }
 
-.introduction-work {
+.introduction-work,
+.introduction-contact {
     font-size: 18px;
     font-weight: 500;
     padding: 2px 12px;
     border-left: 6px solid var(--color-medium-purple);
+}
+
+.introduction-links {
+    margin: 10px 0;
 }
 
 .introduction-icons {
@@ -35,9 +44,13 @@
     transition: all 0.5s ease-in-out;
 }
 
-.introduction-icons img:hover, .card:hover {
+.introduction-icons img:hover {
     transform: scale(1.1);
-    box-shadow: 0 3px 6px rgba(90, 76, 167, 0.5);  
+    box-shadow: 0 3px 6px rgba(90, 76, 167, 0.5);
+}
+
+.introduction-logo {
+    text-align: center;
 }
 
 .introduction-logo img {
@@ -50,7 +63,7 @@
 
 .introduction-logo img:hover {
     transform: scale(1);
-    box-shadow: 0 5px 10px rgba(90, 76, 167, 0.5);  
+    box-shadow: 0 5px 10px rgba(90, 76, 167, 0.5);
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
@@ -64,21 +77,22 @@
         text-align: center;
     }
 
+    .introduction-hello {
+        font-size: 20px;
+    }
+
     .introduction-name {
         font-size: 30px;
         margin-bottom: 5px;
     }
 
-    .introduction-hello {
-        font-size: 20px;
-    }
-
-    .introduction-work {
-        margin: 0;
+    .introduction-work,
+    .introduction-contact {
         font-size: 15px;
+        margin: 0;
         border: none;
     }
-    
+
     .introduction-icons {
         justify-content: center;
         gap: 15px;
@@ -103,14 +117,18 @@
         text-align: center;
     }
 
+    .introduction-hello {
+        font-size: 24px;
+    }
+
     .introduction-name {
         font-size: 48px;
         margin-bottom: 10px;
     }
 
-    .introduction-work, .introduction-hello {
-        font-size: 24px;
-        font-weight: 500;
+    .introduction-work,
+    .introduction-contact {
+        font-size: 20px;
         padding: 4px 12px;
         margin: 0;
         border: none;
@@ -138,17 +156,18 @@
         max-width: 70%;
         margin: 150px auto 0 auto;
     }
-    
-    .introduction-name {
-        font-size: 36px;
-        margin-bottom: 15px;
-    }
 
     .introduction-hello {
         font-size: 32px;
     }
 
-    .introduction-work {
+    .introduction-name {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .introduction-work,
+    .introduction-contact {
         font-size: 20px;
     }
 

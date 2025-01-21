@@ -49,18 +49,15 @@ function scrollToTop() {
     });
 }
 
-// Selecione os elementos
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const body = document.body;
 
-// Adicione o evento ao clique no hambúrguer
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show'); // Abre ou fecha o menu
-    body.classList.toggle('no-scroll'); // Ativa ou desativa o scroll
+    navLinks.classList.toggle('show');
+    body.classList.toggle('no-scroll');
 });
 
-// Feche o menu ao clicar em um link
 navLinks.addEventListener('click', (event) => {
     if (event.target.tagName === 'A') {
         navLinks.classList.remove('show');
