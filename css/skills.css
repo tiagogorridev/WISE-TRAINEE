@@ -7,7 +7,6 @@
     font-size: 16px; 
     border-right: 5px solid var(--color-dark-purple);
     padding: 2px 12px;
-
     margin-right: 30px;
     display: flex;
     justify-content: flex-end;
@@ -16,6 +15,9 @@
 .skills-content {
     margin-left: 190px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .skills-container {
@@ -48,12 +50,6 @@
 
 .card:hover {
     transform: scale(1.05);
-}
-
-.skills-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .divisao2 img {
