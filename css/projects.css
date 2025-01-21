@@ -2,12 +2,14 @@
     margin-top: -10px;
     margin-bottom: -20px;
     background-color: var(--color-medium-purple);
+
 }
 
 .projects-wrapper {
-    max-width: 60%;
+    max-width: 75%;
     margin-left: 190px;
     margin-bottom: 20px;
+
 }
 
 .projects-cards {
