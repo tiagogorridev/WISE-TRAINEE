@@ -152,33 +152,21 @@
     }
 
     .skills-container {
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
     .skills-cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 15px;
         padding: 15px;
         justify-items: center;
     }
 
     .card {
-        background: linear-gradient(135deg, var(--color-light-purple), var(--background-light));
-        border-radius: 15px;
         padding: 15px;
-        text-align: center;
-        border: 1px solid #ddd;
-        transition: transform 1s ease;
         font-size: 15px;
         width: 90%;
-    }
-
-    .card img {
-        max-width: 50%;
     }
 
     .divisao2 {
