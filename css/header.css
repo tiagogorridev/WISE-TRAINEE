@@ -48,7 +48,7 @@ header {
 
 .buttons-container img:hover {
     transform: translateY(-3px);
-    transition: all 1s ease;
+    transition: transform 0.5s ease;
     cursor: pointer;
 }
 
