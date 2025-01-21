@@ -135,17 +135,10 @@
 
 @media (min-width: 1200px) and (max-width: 1600px) {
     #introduction-section {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         max-width: 70%;
         margin: 150px auto 0 auto;
     }
-
-    .introduction-text {
-        text-align: left;
-    }
-
+    
     .introduction-name {
         font-size: 36px;
         margin-bottom: 15px;
@@ -157,21 +150,9 @@
 
     .introduction-work {
         font-size: 20px;
-        padding: 4px 16px;
-        border-left: 6px solid var(--color-medium-purple);
     }
 
     .introduction-icons {
-        justify-content: flex-start;
         gap: 20px;
-    }
-
-    .introduction-icons img {
-        width: 45px;
-    }
-
-    .introduction-logo img {
-        width: 400px;
-        height: 400px;
     }
 }
