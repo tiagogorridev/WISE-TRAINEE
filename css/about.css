@@ -53,6 +53,12 @@
         flex-direction: column;
     }
 
+    .title {
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+    }
+
     .about-about-me {
         font-size: 16px;
         text-align: center;
