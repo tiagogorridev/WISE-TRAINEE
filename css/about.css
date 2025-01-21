@@ -91,11 +91,6 @@
         margin: 0 auto;
     }
 
-    .title {
-        font-size: 40px;
-        text-align: left;
-    }
-
     .about-about-me {
         font-size: 20px;
         text-align: left;
@@ -106,14 +101,6 @@
         width: 400px;
         height: 400px;
         right: 0;
-        top: 150%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .circle2 {
-        width: 400px;
-        height: 400px;
-        top: 130%;
+        top: 140%;
     }
 }
