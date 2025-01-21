@@ -70,6 +70,12 @@
         flex-direction: column;
     }
 
+    .title {
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+    }
+
     .about-about-me {
         font-size: 22px;
         text-align: center;
@@ -101,6 +107,6 @@
         width: 400px;
         height: 400px;
         right: 0;
-        top: 140%;
+        top: 200%;
     }
 }
