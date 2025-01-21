@@ -1,7 +1,7 @@
 #skills-section { 
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     max-width: 90%;
     margin: 0 auto;
     padding: 20px 0;
@@ -55,7 +55,6 @@
     justify-content: center;
     align-items: center;
     animation: float 3s ease-in-out infinite;
-    margin-top: 200px;
     text-align: center;
 }
 
