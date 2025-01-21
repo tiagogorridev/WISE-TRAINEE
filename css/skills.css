@@ -60,11 +60,11 @@
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px var(--color-dark-purple);
 }
 
 .card:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .divisao-1 {
@@ -81,8 +81,6 @@
     margin-top: 200px;
     text-align: center;
 }
-
-
 
 @keyframes float {
     0% {
