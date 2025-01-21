@@ -91,3 +91,52 @@
         border-radius: 8px;
     }
 }
+
+@media (min-width: 480px) and (max-width: 768px) {
+    #projects-section {
+        margin-top: -10px;
+        margin-bottom: -20px;
+        background-color: var(--color-medium-purple);
+    }
+
+    #projects-section h3, h2, .title, .more-projects a {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .projects-wrapper {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .projects-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .card-projects {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-projects h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .card-projects video {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
