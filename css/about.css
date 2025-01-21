@@ -104,9 +104,6 @@
     }
 
     .circle2 {
-        width: 400px;
-        height: 400px;
-        right: 0;
-        top: 200%;
+        display: none;
     }
 }
