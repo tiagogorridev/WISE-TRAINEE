@@ -104,7 +104,7 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 1024px) {
+@media (min-width: 480px) and (max-width: 768px) {
     #projects-section {
         text-align: center;
         margin-bottom: -20px;
@@ -152,6 +152,27 @@
         border: none;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #projects-section {
+        margin-bottom: 0;
+    }
+    
+    .projects-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .card-projects {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+    }
+}
+
 
 @media (min-width: 1024px) and (max-width: 1200px) {
     #projects-section {
