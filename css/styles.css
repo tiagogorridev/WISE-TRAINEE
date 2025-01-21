@@ -27,7 +27,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.sub-title {
+.sub-title-skills, .sub-title-projects {
     font-weight: 300;
     color: #E0E0E0;
     font-size: 24px; 
@@ -35,7 +35,7 @@ body {
     padding: 2px 12px;
 }
 
-.title {
+.title, .title-projects {
     color: #E0E0E0;
     font-size: 40px;
     letter-spacing: 1.2px;
