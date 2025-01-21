@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (savedTheme === "dark") {
             themeImage.src = "assets/img/logo-dark.png";
             themeImage.alt = "Imagem do Tema Escuro";
-            moonIcon.src = "assets/img/lua-dark.png";
+            moonIcon.src = "assets/img/sol-dark.png";
             moonIcon.alt = "Ícone do Tema Escuro";
         }
     }
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (isDark) {
             themeImage.src = "assets/img/logo-dark.png";
             themeImage.alt = "Imagem do Tema Escuro";
-            moonIcon.src = "assets/img/lua-dark.png";
+            moonIcon.src = "assets/img/sol-dark.png";
             moonIcon.alt = "Ícone do Tema Escuro";
         } else {
             themeImage.src = "assets/img/logo.png";
