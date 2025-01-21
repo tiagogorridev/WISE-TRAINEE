@@ -182,13 +182,18 @@ button:hover {
         cursor: pointer;
         display: block;
         position: absolute;
+        left: 20px;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 100;
+        z-index: 1100;
     }
 }
 
 @media (min-width: 480px) and (max-width: 1024px) {
+    body.no-scroll {
+        overflow: hidden;
+    }
+
     header {
         display: flex;
         justify-content: space-between;
