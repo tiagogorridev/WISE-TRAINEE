@@ -18,14 +18,19 @@ header {
     display: flex;
     gap: 20px;
     list-style: none;
-}
-
-.nav-links a {
     font-size: 20px;
+    letter-spacing: 0.5px;
+    color: var(--color-dark-purple);
+    font-weight: 600;
+    position: relative;
+    transition: color 1s ease;
+    text-decoration: none;
 }
 
-.nav-links a, .projects-links, .email a, .introduction-work a {
-    letter-spacing: 0.5px;
+.nav-links a,
+.projects-links,
+.email a,
+.introduction-work a {
     color: var(--color-dark-purple);
     font-weight: 600;
     position: relative;
@@ -40,24 +45,22 @@ header {
     gap: 20px;
 }
 
-.buttons-container img {
-    width: 50px;
-    height: 50px;
-    vertical-align: middle; 
-}
-
 .buttons-container img:hover {
     transform: translateY(-3px);
     transition: transform 0.5s ease;
     cursor: pointer;
 }
 
-.nav-links a:hover::after, .email a:hover::after, .introduction-work a:hover::after {
+.nav-links a:hover::after,
+.email a:hover::after,
+.introduction-work a:hover::after {
     width: 100%;
     opacity: 1;
 }
 
-.nav-links a::after, .email a::after, .introduction-work a::after {
+.nav-links a::after,
+.email a::after,
+.introduction-work a::after {
     content: "";
     position: absolute;
     width: 0;
@@ -74,12 +77,13 @@ header {
     background-color: var(--color-primary-purple);
     border-radius: 10px;
     text-decoration: none;
-    font-weight: 500;
     color: white;
     padding: 8px 12px;
 }
 
-.curriculum-btn:hover, .social-links a:hover, button:hover {
+.curriculum-btn:hover,
+.social-links a:hover,
+button:hover {
     background-color: var(--color-medium-purple);
     transform: translateY(-3px);
     transition: all 0.5s ease;
@@ -96,9 +100,8 @@ header {
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
-
     body.no-scroll {
-        overflow: hidden; /* Impede o scroll */
+        overflow: hidden;
     }
 
     header {
@@ -109,7 +112,7 @@ header {
         position: relative;
         height: 60px;
     }
-    
+
     .nav-links a,
     .buttons-container a {
         display: none;
@@ -133,7 +136,7 @@ header {
         width: 30px;
         height: 30px;
     }
-    
+
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -143,15 +146,11 @@ header {
         top: 0;
         left: -100%;
         width: 100%;
-        height: 100%; /* Garante que ocupe toda a tela */
+        height: 100%;
         background-color: var(--color-light-purple);
         transition: left 0.3s ease-in-out;
-        z-index: 1000; /* Acima do header */
-        padding: 0; /* Remove espaçamento extra */
-    }
-
-    .nav-links.show {
-        left: 0; /* Faz o menu aparecer */
+        z-index: 1000;
+        padding: 0;
     }
 
     .nav-links a {
@@ -161,16 +160,21 @@ header {
         font-size: 28px;
         border-bottom: none;
         text-decoration: none;
-        width: 100%; /* Garante que o link ocupe toda a largura da tela */
+        width: 100%;
     }
 
     .nav-links a:hover {
-        transform: translateY(-3px); /* Move ligeiramente para cima */
-        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Suaviza apenas a transformação e a cor */
-        cursor: pointer; /* Garante o ponteiro de mão */
+        transform: translateY(-3px);
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        cursor: pointer;
     }
+
     .nav-links a::after {
-        content: none; /* Remove a linha */
+        content: none;
+    }
+
+    .nav-links.show {
+        left: 0;
     }
 
     .hamburger {
@@ -178,7 +182,6 @@ header {
         cursor: pointer;
         display: block;
         position: absolute;
-        left: 20px;
         top: 50%;
         transform: translateY(-50%);
         z-index: 1100;
@@ -194,7 +197,7 @@ header {
         position: relative;
         height: 60px;
     }
-    
+
     .nav-links a,
     .buttons-container a {
         display: none;
@@ -228,14 +231,10 @@ header {
         top: 0;
         left: -100%;
         width: 100%;
-        height: 100%; /* Garante que ocupe toda a tela */
+        height: 100%;
         background-color: var(--color-light-purple);
         transition: left 0.3s ease-in-out;
-        z-index: 1000; /* Acima do header */
-    }
-
-    .nav-links.show {
-        left: 0; /* Faz o menu aparecer */
+        z-index: 1000;
     }
 
     .nav-links a {
@@ -245,16 +244,21 @@ header {
         font-size: 34px;
         border-bottom: none;
         text-decoration: none;
-        width: 100%; /* Garante que o link ocupe toda a largura da tela */
+        width: 100%;
     }
 
     .nav-links a:hover {
-        transform: translateY(-3px); /* Move ligeiramente para cima */
-        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Suaviza apenas a transformação e a cor */
-        cursor: pointer; /* Garante o ponteiro de mão */
+        transform: translateY(-3px);
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        cursor: pointer;
     }
+
     .nav-links a::after {
-        content: none; /* Remove a linha */
+        content: none;
+    }
+
+    .nav-links.show {
+        left: 0;
     }
 
     .hamburger {
