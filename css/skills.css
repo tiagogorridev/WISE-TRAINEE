@@ -180,3 +180,13 @@
         margin-bottom: 20px;
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .sub-title-skills {
+        font-size: 28px;
+    }
+
+    .title-skills {
+        font-size: 35px;
+    }
+}
