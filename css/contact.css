@@ -140,12 +140,20 @@ input:valid, input:focus, textarea:valid, textarea:focus {
         text-align: center;
     }
 
+    .contact-info h3 {
+        font-size: 24px;
+    }
+
     .contact-info h2 {
         font-size: 35px;
     }
 
     form {
         padding: 20px;
+    }
+
+    form h2 {
+        font-size: 24px;
     }
 
     input, textarea, button {
@@ -189,7 +197,7 @@ input:valid, input:focus, textarea:valid, textarea:focus {
     }
 
     .contact-info h3 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .contact-info h2 {

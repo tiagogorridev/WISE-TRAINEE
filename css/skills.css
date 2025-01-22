@@ -89,8 +89,12 @@
     }
 
     .sub-title-skills {
-        font-size: 16px;
+        font-size: 24px;
         border: none;
+    }
+
+    .title-skills {
+        font-size: 35px;
     }
 
     .sub-title-skills, .title-skills {
@@ -144,6 +148,10 @@
     .sub-title-skills {
         margin: 0;
         border: none;
+    }
+
+    .title-skills {
+        font-size: 35px;
     }
 
     .sub-title-skills, .title-skills {
