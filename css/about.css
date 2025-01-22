@@ -1,6 +1,6 @@
 #about-section {
     margin: -12px 0;
-    background-color: var(--color-medium-purple);
+    background-color: var(--color-dark-purple);
     padding: 20px;
     color: #E0E0E0;
 }
@@ -37,7 +37,7 @@
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background-color: var(--color-dark-purple);
+    background-color: var(--color-medium-purple);
     position: absolute;
     right: 0;
     top: 115%;
