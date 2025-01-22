@@ -137,19 +137,22 @@
         width: 100%;
     }
 
+    .title-skills {
+        font-size: 35px;
+    }
+
     .sub-title-skills {
-        font-size: 42px;
+        font-size: 26px;
+        margin: 0;
         border: none;
     }
 
     .sub-title-skills, .title-skills {
         color: var(--color-dark-purple);
-        margin-bottom: 10px;
         text-align: center;
         width: 100%;
     }
     
-
     .skills-container {
         flex-direction: column;
         align-items: center;

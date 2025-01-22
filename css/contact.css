@@ -184,8 +184,12 @@ input:valid, input:focus, textarea:valid, textarea:focus {
         margin: 0;
     }
 
+    .contact-info h3 {
+        font-size: 26px;
+    }
+
     .contact-info h2 {
-        font-size: 36px;
+        font-size: 35px;
     }
 
     form {
