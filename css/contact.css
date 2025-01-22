@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px auto;
+    margin: 120px auto 20px auto;
 }
 
 .contact-info {
@@ -124,7 +124,6 @@ input:valid, input:focus, textarea:valid, textarea:focus {
     #contact-section {
         flex-direction: column;
         max-width: 90%;
-        margin: 50px auto;
     }
 
     .contact-info, 
@@ -176,7 +175,6 @@ input:valid, input:focus, textarea:valid, textarea:focus {
     #contact-section {
         flex-direction: column;
         max-width: 85%;
-        margin: 70px auto;
     }
 
     .contact-info,
