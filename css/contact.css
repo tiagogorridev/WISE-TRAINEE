@@ -16,12 +16,12 @@
 
 .contact-info h3 {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .contact-info h2 {
     font-weight: 700;
-    font-size: 42px;
+    font-size: 40px;
 }
 
 .contact-forms {
@@ -35,6 +35,10 @@ form {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
+}
+
+form h2 {
+    font-size: 28px;
 }
 
 input, textarea, button {

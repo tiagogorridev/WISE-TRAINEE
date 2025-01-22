@@ -12,6 +12,14 @@
     margin-bottom: 20px;
 }
 
+.sub-title-skills {
+    font-size: 28px;
+}
+
+.title-skills {
+    font-size: 40px;
+}
+
 .sub-title-skills, .title-skills {
     color: var(--color-dark-purple);
     margin-bottom: 10px;
@@ -85,10 +93,6 @@
         border: none;
     }
 
-    .title-skills {
-        font-size: 35px;
-    }
-
     .sub-title-skills, .title-skills {
         color: var(--color-dark-purple);
         margin-bottom: 10px;
@@ -137,12 +141,7 @@
         width: 100%;
     }
 
-    .title-skills {
-        font-size: 35px;
-    }
-
     .sub-title-skills {
-        font-size: 26px;
         margin: 0;
         border: none;
     }

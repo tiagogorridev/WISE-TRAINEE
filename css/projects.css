@@ -10,6 +10,14 @@
     margin: 0 auto;
 }
 
+.sub-title-projects {
+    font-size: 28px;
+}
+
+.title-projects {
+    font-size: 40px;
+}
+
 .projects-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -69,10 +77,6 @@
         text-align: center;
     }
 
-    .title-projects {
-        font-size: 35px;
-    }
-
     .projects-cards {
         grid-template-columns: 1fr;
         padding: 10px;
@@ -118,14 +122,6 @@
         max-width: 80%;
         margin: 0 auto 20px auto;
         text-align: center;
-    }
-
-    .title-projects {
-        font-size: 35px;
-    }
-
-    .sub-title-projects {
-        font-size: 26px;
     }
 
     .projects-cards {
