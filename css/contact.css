@@ -223,4 +223,8 @@ input:valid, input:focus, textarea:valid, textarea:focus {
         max-width: 70%;
         margin: 100px auto;
     }
+
+    .contact-info h2 {
+        font-size: 35px;
+    }
 }

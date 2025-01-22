@@ -118,7 +118,7 @@
     }
 
     .introduction-hello {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .introduction-name {
@@ -154,10 +154,6 @@
     #introduction-section {
         max-width: 70%;
         margin: 150px auto 0 auto;
-    }
-
-    .introduction-hello {
-        font-size: 32px;
     }
 
     .introduction-name {
