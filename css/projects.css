@@ -12,6 +12,7 @@
 
 .sub-title-projects {
     font-size: 28px;
+    border-left: 5px solid var(--color-medium-purple);
 }
 
 .title-projects {
@@ -52,7 +53,7 @@
     color: #E0E0E0;
     text-decoration: none;
     font-size: 16px; 
-    border-right: 5px solid var(--color-dark-purple);
+    border-right: 5px solid var(--color-medium-purple);
     padding: 10px;
     margin-right: 30px;
     display: flex;
@@ -61,7 +62,7 @@
 }
 
 .more-projects a:hover {
-    color: var(--color-dark-purple);
+    color: var(--color-medium-purple);
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
