@@ -127,6 +127,7 @@ footer {
     }
 
     .social-links a {
+        flex: 0 0 45%;
         margin: 5px;
         padding: 8px 15px;
         font-size: 12px;
@@ -172,17 +173,19 @@ footer {
     .contact p {
         font-size: 14px;
     }
-
+    
     .social-links {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
     }
+
     .social-links a {
+        flex: 0 0 45%;
         margin: 5px;
-        padding: 10px 18px;
-        font-size: 13px;
+        padding: 8px 15px;
+        font-size: 12px;
     }
 
     .back-to-top {
