@@ -33,7 +33,8 @@ body.dark-mode ::placeholder {
 body.dark-mode input:valid, 
 body.dark-mode input:focus, 
 body.dark-mode textarea:valid, 
-body.dark-mode textarea:focus {
+body.dark-mode textarea:focus,
+body.dark-mode .social-links a {
     background-color: var(--color-light-purple);
     color: black;
 }

@@ -57,6 +57,7 @@ footer {
 }
 
 .social-links a {
+    background-color: var(--color-light-purple);
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
@@ -118,7 +119,15 @@ footer {
         font-size: 14px;
     }
 
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
     .social-links a {
+        margin: 5px;
         padding: 8px 15px;
         font-size: 12px;
     }
@@ -164,7 +173,14 @@ footer {
         font-size: 14px;
     }
 
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
     .social-links a {
+        margin: 5px;
         padding: 10px 18px;
         font-size: 13px;
     }
