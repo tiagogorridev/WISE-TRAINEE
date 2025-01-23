@@ -52,6 +52,10 @@ body.dark-mode button:hover {
     background-color: var(--color-medium-purple);
 }
 
+body.dark-mode .social-links a:hover {
+    background-color: var(--color-dark-black);
+}
+
 body.dark-mode .introduction-hello, 
 body.dark-mode .nav-links a, 
 body.dark-mode #skills-section h3, 
